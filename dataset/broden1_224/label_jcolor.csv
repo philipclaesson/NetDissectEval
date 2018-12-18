@@ -1,0 +1,12 @@
+number,name,category,frequency,coverage,syns
+1,black-c,color(62358),62358,11135.320474,
+2,grey-c,color(62310),62310,12712.843129,
+3,white-c,color(62054),62054,5778.038204,
+4,brown-c,color(61583),61583,14549.652454,
+5,green-c,color(61508),61508,5049.989735,
+6,pink-c,color(60755),60755,1478.518582,
+7,purple-c,color(59516),59516,865.041519,
+8,blue-c,color(57825),57825,4899.174121,
+9,yellow-c,color(57560),57560,2730.587283,
+10,red-c,color(55938),55938,1678.059729,
+11,orange-c,color(50369),50369,2427.774769

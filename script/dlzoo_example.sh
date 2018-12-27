@@ -9,7 +9,7 @@ echo "Downloading $MODEL"
 mkdir -p zoo
 pushd zoo
 wget --progress=bar \
-   http://places2.csail.mit.edu/models_places365/whole_resnet50_places365_python36.pth.tar
+   http://places2.csail.mit.edu/models_places365/resnet18_places365.pth.tar
 popd
 
 echo "done"

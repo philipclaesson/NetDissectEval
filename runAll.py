@@ -4,7 +4,7 @@ def runAll():
     import settings
     q_vals = ["q1", "q2", "q3","q4" ]
     models = ["resnet18"]
-    datasets = ["places365", "imagenet"]
+    datasets = ["places365"]
     version = "v4"
     for dataset in datasets:
         settings.DATASET = dataset

@@ -1,9 +1,9 @@
 ######### global settings  #########
-Q = 'q2'
+Q = ''
 GPU = True                                  # running on GPU is highly suggested
 TEST_MODE = False                           # turning on the testmode means the code will run on a small dataset.
 CLEAN = True                               # set to "True" if you want to clean the temporary large files after generating result
-MODEL = 'resnet18'                          # model arch: resnet18, alexnet, resnet50, densenet161
+MODEL = 'densenet161'                          # model arch: resnet18, alexnet, resnet50, densenet161
 DATASET = 'places365'                       # model trained on: places365 or imagenet
 QUANTILE = 0.005                            # the threshold used for activation
 SEG_THRESHOLD = 0.04                        # the threshold used for visualization
@@ -13,8 +13,8 @@ MODEL_FILE=""
 # to show top N image with highest activation for each unit
 PARALLEL = 1                                # how many process is used for tallying (Experiments show that 1 is the fastest)
 CATAGORIES = ["object"] # concept categories that are chosen to detect: "object", "part", "scene", "material", "texture", "color"
-OUTPUT_FOLDER = "result/data_"+MODEL+"_"+DATASET+"_"+Q # result will be stored in this folder
-DATA_DIRECTORY = 'dataset/broden1_224_'+ Q
+OUTPUT_FOLDER = "result/data_"+MODEL+"_"+DATASET # result will be stored in this folder
+DATA_DIRECTORY = 'dataset/broden1_224'
 ########### sub settings ###########
 # In most of the case, you don't have to change them.
 # DATA_DIRECTORY: where broaden dataset locates
@@ -29,7 +29,7 @@ DATA_DIRECTORY = 'dataset/broden1_224_'+ Q
 # INDEX_FILE: if you turn on the TEST_MODE, actually you should provide this file on your own
 
 if MODEL != 'alexnet':
-    DATA_DIRECTORY = 'dataset/broden1_224_' + Q
+    DATA_DIRECTORY = 'dataset/broden1_224'
     IMG_SIZE = 224
 else:
     DATA_DIRECTORY = 'dataset/broden1_227'
